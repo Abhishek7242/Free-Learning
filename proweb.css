@@ -1,0 +1,638 @@
+*{
+ margin: 0;
+ padding: 0;
+
+/* overflow: hidden; */
+}
+/* html classes  */
+.text-decor-none{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+/* html classes  */
+
+
+
+
+
+
+body{
+    /* background-color: #22f730; */
+    height: 2300px;
+}
+header{
+    width: 100%;
+    display: flex;
+    top: 0;
+    position: sticky;
+    z-index: 1000;
+}
+
+.container1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.topbox::after{
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: black;
+    opacity: 0.8;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+.topbox{
+    position: relative;
+    padding: 9px 19px;
+    /* background-color: rgb(200, 0, 255); */
+    /* width: 100%; */
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+#Searchbox{
+    margin-right: 33px;
+    
+}
+#Searchbox input {
+    border-radius: 9px;
+    padding: 3px 9px;
+    /* width: 200px; */
+}
+#Searchbox button {
+    color: black;
+    border-radius: 9px;
+    padding: 3px 9px;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    cursor: pointer;
+    width: 40px;
+}
+
+#signinbox{
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+    border-radius: 40px;
+    border:2px solid #0026ff;
+
+    display: flex;
+}
+
+/* log in css starts */
+#login{
+    /* background-color: #8B5CF6; */
+    width: 90px;
+    height:40px;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    /* border-top: 2px solid#0026ff;
+    border-left:2px solid #0026ff;
+    border-bottom:2px solid #0026ff; */
+    /* border:2px solid #0026ff; */
+    display: flex;
+
+}
+#login:active, #login:hover{
+    /* color: black; */
+    background-color: #0026ff;
+}
+/* log in css ends */
+
+
+/* SIGNUPcss starts */
+#signup{
+    /* box-shadow: 10px 0px 10px -10px rgba(0, 0, 0, 0.75);s */
+    background-color: #0026ff;
+    width: 90px;
+    /* border:2px solid #0026ff; */
+    height:40px;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    /* background-color: aqua; */
+    display: flex;
+}
+#signup:active,#signup:hover{
+background-color:transparent;
+}
+
+#signinbox:active{
+/* background-color: #001cbc; */
+/* border:2px solid #001cbc; */
+}
+/* SIGNUP css ends */
+
+
+
+
+
+.svg-icon {
+    /* Position the icon */
+    position: absolute;
+    right: 230px;
+    transform: translateY(-50%);
+    
+    /* Set the icon color */
+    color: #0026ff;
+    
+    /* Set the icon size */
+    height: 1.5rem;
+    width: 1.5rem;
+    top: 51%;  font-size: 1.5rem;
+    
+    /* Set the cursor property to indicate it's clickable */
+    cursor: pointer;
+  }
+  #search {
+    /* Position the input element */
+    position:absolute;
+    right: 221px;
+    top: 17px;
+    background: transparent;
+
+
+    
+    /* Set the input element size */
+   
+    width: 164px;
+    height: 25px;
+    padding: 0 9px;
+
+    font-size: 1rem; /* set the font size to be consistent with other text */
+    
+    /* Set the input element appearance */
+    background-color: white;
+    border: 2px solid #0026ff;
+    border-radius: 40px;
+    outline: none; /* Remove the default focus border */
+    color: #4B5563; /* set the text color */
+    
+    /* Set the transition properties to animate the element */
+    transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
+  
+  /* Style the placeholder text */
+  #search::placeholder {
+    color: #9CA3AF;
+  }
+  
+  /* Set the element styles on focus */
+  #search:focus {
+    border-color: #8B5CF6;
+    background-color: #F9FAFB;
+    color: #1F2937;
+    box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.4); /* Add a focus ring */
+  }
+  
+  /* Dark mode styles */
+  #search.dark {
+    background-color: #4B5563;
+    color: #D1D5DB;
+  }
+  
+  #search.dark::placeholder {
+    color: #9CA3AF;
+  }
+  
+  #search.dark:focus {
+    border-color: #8B5CF6;
+    background-color: #6B7280;
+    color: #F9FAFB;
+    box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.4);
+  }
+    
+  .hidden {
+    display: none;
+  }
+#navbar{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    /* justify-content: space-between; */
+    position: relative;
+}
+#navbar::before{
+    content: "";
+    /* top: 0; */
+    left: 0;
+    height: 100%;
+    background-color: rgb(212, 246, 255);
+    opacity: 0.5;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+ul{
+    padding: 0px 19px;
+    display: flex;
+}
+ul li{
+
+    list-style: none;
+}
+ul li a{
+    margin: 4px 0px ;
+    cursor: pointer;
+    color: #000000;
+    padding: 5px 15px;
+}
+ul li a:hover, ul li a:active{
+    position: relative;
+    background-color: rgb(81, 107, 255);
+    color: rgb(255, 255, 255);
+    border-radius: 22px;
+    top: 5px;
+}
+
+.dropbtn {
+    /* background-color: #4CAF50; */
+    color: rgb(0, 0, 0);
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropbtn:active {
+    background-color: #919191;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.cmbox{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    overflow: auto;
+    
+    /* margin-left: 588px; */
+    margin-top: 9px;
+    padding: 0 4px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 6px rgb(0, 0, 0);
+    opacity: 0.95;
+}.show{
+    display: block;
+    color: black;
+    
+}
+.red{
+    background-color: red;
+}
+.hide{
+    display: none;
+}
+
+
+/* NAV BAR ENDS HERE  */
+
+
+/* h-primary css starts from here  */
+
+#body{
+    height: 1000px;
+    width: 100%;
+}
+#h-primary{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 620px;
+    flex-direction: column;
+}
+#h-primary::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 720px;
+    width: 100%;
+    background: url('back3.webp')no-repeat center center/cover;
+    /* background-color: black; */
+    opacity: 0.9;
+}
+.h-primary-inner{
+    width: 100%;
+    height: 450px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+    /* position: relative; */
+}
+
+.h-primary-inner h1{
+    font-size: 3rem ;
+    /* margin: 44px 0px; */
+}
+
+#h1box{
+    display: flex;
+    position: absolute;
+    left: 200px;
+    flex-direction: column;
+}
+
+#h1{
+    position: relative;
+    left: -50px;
+margin: 0;
+}
+
+#btn{
+    position: relative;
+    /* left: 42px; */
+    width: 120px;
+    height: 45px;
+}
+#p-box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#p-box p{
+    /* font-weight: bold; */
+    font-size: large;
+    margin: 11px 0px;
+}
+
+/* h-primary css ends from here  */
+
+
+/* h-secondarys css tarts from here  */
+
+
+#h-secondary{
+    margin: 50px 0px;
+display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 2px solid black;
+    height: 450px;
+    /* border: 2px solid red; */
+}
+#freeC{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    height: 350px;
+    /* box-shadow: 0 0 12px black; */
+
+    /* flex-direction: column; */
+width: 90%;
+}
+#freeC h1{
+    position: relative;
+font-size:3rem; 
+ top: -65px;
+    left: 26px;
+}
+#freeC P{
+
+    position: relative;
+font-size:1.2rem; 
+ top: -47px;
+ left: 57px;
+ width: 60%;
+}
+
+#freeimg{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 600px;
+    height: 400px;border-radius: 200px;
+}
+.boxes{
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    height: 300px;
+    width: 100%;
+    background-color: aqua;
+    margin-bottom: 33px;
+}
+
+#freebox{ 
+   display: flex;
+   /* flex-direction: column; */
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 50px;
+   top: 18px;
+   position: relative;
+
+}
+.freebtn {
+    cursor: pointer;
+    /* border-radius: 6px; */
+
+    border: none;
+    font-size: large;
+
+    background-color: #0026ff;
+    /* margin: 0px 22px; */
+    width: 150px;
+
+    height: 50px;
+}
+
+#btn1{
+  
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    background-color: rgb(0, 140, 255);
+    color: black;
+    box-shadow: 0 0 9px;
+}
+
+#btn1:hover, #btn1:active{
+    top: -6px;
+    left: 5px;
+    /* box-shadow: none; */
+    position: relative;
+    color: rgb(255, 255, 255);
+    background-color: #0026ff;
+}
+#btn2 {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 9px;
+}
+
+#btn2:hover,#btn2:active{
+    position: relative;
+  top: -6px;
+  right: 5px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    /* box-shadow: none; */
+}
+
+
+#freebooks{
+    margin: 50px 0px;
+    display: flex;
+        flex-direction: column;
+        background-color: #ffffff;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 500px;
+        border-bottom: 2px solid black ;
+        /* border: 2px solid red; */
+    }
+
+
+    #freeB{
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+        height: 350px;
+        /* box-shadow: 0 0 12px black; */
+    
+        /* flex-direction: column; */
+    width: 90%;
+    }
+    #freeB h1{
+        position: relative;
+    font-size:3rem; 
+     top: -65px;
+        left: 26px;
+    }
+    #freeB P{
+    
+        position: relative;
+    font-size:1.2rem; 
+     top: -47px;
+     left: 57px;
+     width: 90%;
+    }
+    
+    #imgbox1{
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: 450px;
+        height: 350px;
+        background-color: #aa00ff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border-top-right-radius: 200px;
+        border-bottom-right-radius: 200px;
+    }
+    #freeBimg{
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: 450px;
+        height: 350px;
+        border-top-right-radius: 200px;
+        border-bottom-right-radius: 200px;
+    }
+
+    #imgbox{
+        display: flex;
+        flex-direction: row;
+    }
+    #colorbox{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        border-top-left-radius: 200px;
+        border-bottom-left-radius: 200px;
+        position: relative;
+        width: 250px;
+        height: 350px;
+        top: 0px;
+        left: 0px;
+        background-color: #aa00ff;
+    }
+    #hh1{
+        /* position: relative; */
+        top: 0px;
+        height: 280px;
+        width: 180px;
+        left: 0px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background:url(book1.jpg)no-repeat center center/cover;
+        /* border-radius: 200px; */
+        border-top-left-radius: 200px;
+        border-bottom-left-radius: 200px;
+
+    }
+    #hh1 h1{
+        position: relative;
+        top: 0;
+        left: 0;
+color: #ffffff;
+
+    }
+
+    #freeCbtn{
+        position: relative;
+        top: 0px;
+        left: 600px;
+        width: 100px;
+        border: none;
+        height: 40px;
+        font-size: large;
+        background-color: #0026ff;
+
+        color: #ffffff;
+        cursor: pointer;
+        border-radius: 100px;
+    }
+    
+    #freeBbtn:hover,#freeCbtn:hover, #freeBbtn:active,#freeCbtn:active{
+background-color: #00158e;
+    }
+    #freeBbtn{
+        cursor: pointer;
+        color: #ffffff;
+        border-radius: 100px;
+        font-size: large;
+        width: 100px;
+        height: 40px;
+        border: none;
+ position: relative;
+ background-color: #0026ff;
+        top: 44px;
+        left: 600px;
+    }
+
+
